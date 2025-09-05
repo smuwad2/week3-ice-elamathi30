@@ -10,25 +10,26 @@
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <form>
             <div class="row g-3">
-                <div>
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName">
+                <div class="col-4 mb-3">
+            
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input class="form-control" type="text" id="fullName" >
                 </div>
 
                 <!-- Email -->
-                <div>
-                    <label for="email">Email address</label>
-                    <input type="email" id="email">
+                <div class="col-4 mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" id="email" class="form-control">
                 </div>
 
                 <!-- Gender -->
-                <div>
-                    <label>Gender</label>
-                    <div>
-                        <input type="radio" name="gender" id="male" value="male">
+                <div class="col-4 mb-3">
+                    <label class="form-label d-block">Gender</label>
+                    <div class="form-check inline-block">
+                        <input type="radio" class="form-check-label" name="gender" id="male" value="male">
                         <label for="male">Male</label>
                     </div>
                     <div>
@@ -38,8 +39,9 @@
                 </div>
 
                 <!-- Country -->
-                <div>
+                <div class="col-4">
                     <label for="country">Country</label>
+                    <br>
                     <select id="country">
                         <option selected>Select your country</option>
                         <option>USA</option>
@@ -49,7 +51,7 @@
                 </div>
 
                 <!-- Subscribe -->
-                <div>
+                <div class="col-4">
                     <div class="mt-4">
                         <input type="checkbox" id="subscribe">
                         <label for="subscribe">
@@ -61,12 +63,13 @@
                 <!-- Message -->
                 <div>
                     <label for="message">Message</label>
-                    <textarea id="message" rows="4"></textarea>
+                    <br>
+                    <textarea id="message" rows="4" cols="100" class="form-control"></textarea>
                 </div>
 
                 <!-- Submit Button -->
-                <div>
-                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary mt-3 ">Submit</button>
                 </div>
             </div>
         </form>
